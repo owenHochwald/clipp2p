@@ -12,4 +12,4 @@ clean:
 	rm ${BINARY_NAME}
 
 test:
-	go test -v 
+	go test -v ./...

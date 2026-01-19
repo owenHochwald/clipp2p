@@ -41,5 +41,5 @@ jobs:
         run: go build -v ./cmd/clipp2p/main.go
 
       - name: Test
-        run: go test -v
+        run: go test -v ./...
         
