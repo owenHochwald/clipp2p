@@ -64,3 +64,9 @@ func (n *Node) AddrInfo() peer.AddrInfo {
 		Addrs: n.host.Addrs(),
 	}
 }
+
+// SetupConnectionNotifier registers handlers
+func (n *Node) SetupConnectionNotifier(onConnect, onDisconnect func(peer.ID)) {
+	notifier := NewConnectionNotifier(onConnect, onDisconnect)
+	n.host.Network().Notify(notifier)
+}
