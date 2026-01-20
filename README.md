@@ -2,6 +2,7 @@
 
 A peer-to-peer universal clipboard for your terminal. Copy on one machine, paste on another.
 
+![Demo](public/demo.gif)
 
 ## Features
 
